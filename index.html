@@ -34,7 +34,6 @@
             }
             
             .jumbotron button {
-                background-color: blue;
                 color: white;
             }
             
@@ -44,6 +43,35 @@
             
             .card-img-top {
                 width: 100%;
+            }
+            
+            #about-section {
+                margin: 3% auto;
+            }
+            
+            #about-section img {
+                max-width: 90%;
+                height: auto;
+            }
+            
+            .no-gutter > [class*='col-'] {
+                padding-right:0;
+                padding-left:0;
+            }
+            
+            #customers-section {
+                background-color: #0275D8;
+                color: white;
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+            #customers-section img {
+                max-width: 90%;
+                height: auto;
+            }
+            
+            #customers-section .row {
+                padding: 2% 0 2% 0;
             }
             
             #googleplay {
@@ -72,7 +100,6 @@
     <body>
     
         <!-- NAVIGATION BAR -->
-
         <nav class="navbar navbar-toggleable-md navbar-light">
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,7 +144,9 @@
             </div>
 
         </nav>
+        <!-- END OF NAVIGATION BAR -->
 
+        
         <!-- JUMBOTRON -->
         <div class="jumbotron">
 
@@ -129,11 +158,14 @@
 
             <p>Delivering high quality service at a can't-beat, low price</p>
             
-            <button type="button" class="btn btn-lg">Contact Us!</button>
+            <button type="button" class="btn btn-lg btn-primary">Contact Us!</button>
 
             
         </div>
+        <!-- END OF JUMBOTRON -->
         
+        
+        <!-- SERVICES DESCRIPTION -->
         <div class="container" id="appsummary">
         
             <div class="row">
@@ -180,7 +212,161 @@
 
             </div>
         </div>
+        <!-- END OF SERVICES DESCRIPTION -->
         
+        
+        <!-- ABOUT -->
+        <div class = "container" id="about-section">
+            
+            <div class="row">
+            
+                <h1>About Us</h1>
+            
+            </div>
+            
+            <div class="row no-gutter">
+            
+                <div class="col-md-6">
+                
+                    <p class="lead">All Star Linen is a textile service from Phoenix, Arizona that provides local businesses with clean supplies. The company is ran by mat and linen expert Tom O'Brien that has provided similar service to valley-wide customers for over 20 years.</p>
+                
+                </div>
+                
+                <div class="col-md-6">
+                    
+                    <img src="apron.jpg" class="img-fluid">
+                
+                </div>
+                
+            </div>
+        
+        </div>
+        <!-- END OF ABOUT -->
+        
+        
+        <!-- CUSTOMERS -->
+        <div class="container-fluid" id="customers-section">
+        
+            <div class="container">
+                
+                <div class="row">
+
+                    <h1>Customers</h1>
+
+                </div>
+
+                <div class="row no-gutter">
+
+                    <div class="col-md-4">
+
+                        <img src="subway.png">
+
+                    </div>
+                    
+                    <div class="col-md-4">
+
+                        <img src="subway.png">
+
+                    </div>
+                    
+                    <div class="col-md-4">
+
+                        <img src="subway.png">
+
+                    </div>
+
+                </div>
+                
+                <div class="row no-gutter">
+
+                    <div class="col-md-4">
+
+                        <img src="subway.png">
+
+                    </div>
+                    
+                    <div class="col-md-4">
+
+                        <img src="subway.png">
+
+                    </div>
+                    
+                    <div class="col-md-4">
+
+                        <img src="subway.png">
+
+                    </div>
+
+                </div>
+        
+            </div>
+        
+        
+        </div>
+        
+        
+        <!-- END OF CUSTOMERS -->
+        
+        <!-- CONTACT FORM  need to center and change background color and text color, and change labels/hints-->
+        <div class="container" id="contact-section">
+        
+            <div class="row">
+            
+                <h1>Contact Us</h1>
+                
+            </div>
+        
+            <div class="row no-gutters">
+            
+                <div class="col align-self-center">
+                
+                    <p>Write us an email with any questions or concerns</p>
+                    
+                </div>
+            </div>
+            
+            <div class="row">
+            
+                <div class="col align-self-center">
+                
+                    <form>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleSelect1">Example select</label>
+                            <select class="form-control" id="exampleSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        
+        <!-- END OF CONTACT FORM -->
+        
+        
+        
+        
+        
+        <!--FOOTER-->
         <div id="footer">
                     
             <ul class="nav justify-content-center hidden-sm-down">
